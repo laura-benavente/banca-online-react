@@ -1,0 +1,64 @@
+.root {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 5px solid #232c3b;
+}
+
+.header-container h1 {
+  font-size: 2.2rem;
+  font-weight: 300;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 0 auto;
+}
+
+.form > div:not(:nth-of-type(3)) {
+  width: 350px;
+}
+
+.form > div:nth-of-type(3) {
+  width: 100%;
+}
+
+.error {
+  color: var(--error_color);
+  font-size: 0.9em;
+}
+
+.input-error {
+  box-shadow: unset;
+  border-color: #f44336;
+}
+
+.btnEnviarContainer {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid black;
+}
+
+.btn-enviar {
+  width: 90px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  .btn-enviar {
+    width: 100%;
+  }
+}
